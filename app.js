@@ -83,14 +83,24 @@
 
 // exo 7
 
+// function factoriel_de_10() {
+//     let result = 0
+//     let calcul = ""
+//     for (let i = 1; i <= 10; i++) {
+//         calcul += i + "*"
+//     }
+//     calcul = calcul.substring(0, calcul.length - 1)
+//     return eval(calcul)
+// }
+// console.log(factoriel_de_10());
+
+
+// exo 7 correction
 function factoriel_de_10() {
-    let result = 0
-    let calcul = ""
-    for (let i = 1; i <= 10; i++) {
-        calcul += i + "*"
+    let result = 1
+    for (let i = 1; i < 10; i++) {
+        result += result * i
     }
-    calcul = calcul.substring(0, calcul.length - 1)
-    return eval(calcul)
+    return result
 }
 console.log(factoriel_de_10());
-
