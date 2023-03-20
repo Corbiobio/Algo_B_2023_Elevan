@@ -107,13 +107,29 @@
 
 // exo 8 
 
-function paire_de_10_a_30() {
-    let result = 0
-    for (let i = 10; i <= 30; i += 2) {
-        result += i
+// function paire_de_10_a_30() {
+//     let result = 0
+//     for (let i = 10; i <= 30; i += 2) {
+//         result += i
+//     }
+//     return result
+// }
+
+// console.log(paire_de_10_a_30());
+
+
+
+// exo 10
+let arr_ex = [0, 1, 0, 1, 5, 0, 5, 445, 8]
+function somme_arr(arr) {
+    let somme = 0
+    for (let i = 0; i < arr.length; i++) {
+        somme += arr[i]
     }
-    return result
+    return somme
 }
 
-console.log(paire_de_10_a_30());
+console.log(somme_arr(arr_ex));
+
+
 
