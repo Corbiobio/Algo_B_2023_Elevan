@@ -173,20 +173,38 @@
 
 
 // exo 13 
-let arr_test = [12, 56, 45, 789, 56, 45, 23, 56, 564, 23, 46, 56, 613]
-function max(arr) {
-    let num_max = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > num_max) {
-            num_max = arr[i]
-        }
+// let arr_test = [12, 56, 45, 789, 56, 45, 23, 56, 564, 23, 46, 56, 613]
+// function max(arr) {
+//     let num_max = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > num_max) {
+//             num_max = arr[i]
+//         }
+//     }
+//     return num_max
+// }
+
+// console.log(max(arr_test));
+
+// exo 14
+
+
+
+function fibonacci() {
+    let num_temp = 1
+    let num_temp2 = 0
+    let final_num = 0
+    for (let i = 0; i <= 10; i++) {
+        final_num += num_temp2
+
+
+        num_temp2 = num_temp
+        num_temp = final_num
+        console.log(final_num);
     }
-    return num_max
+    return final_num
 }
-
-console.log(max(arr_test));
-
-
+console.log(fibonacci());
 
 
 
