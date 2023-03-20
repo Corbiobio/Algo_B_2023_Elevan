@@ -143,18 +143,33 @@
 
 
 // exo 11
-let array_test = [5, 9, 7, 4, 5, 63, 4, 8, 89, 5]
-function moyenne(arr) {
-    let total = 0
+// let array_test = [5, 9, 7, 4, 5, 63, 4, 8, 89, 5]
+// function moyenne(arr) {
+//     let total = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         total += arr[i]
+//     }
+//     return total / arr.length
+// }
+
+// console.log(moyenne(array_test));
+
+
+// exo 12
+
+
+let arr_test = [-5, 5, -6, 89, 9, 8, -45, -555, 23]
+function num_positif(arr) {
+    let arr_temp = []
     for (let i = 0; i < arr.length; i++) {
-        total += arr[i]
+        if (arr[i] >= 0) {
+            arr_temp.push(arr[i])
+        }
     }
-    return total / arr.length
+    return arr_temp
 }
 
-console.log(moyenne(array_test));
-
-
+console.log(num_positif(arr_test));
 
 
 
