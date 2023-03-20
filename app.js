@@ -69,12 +69,28 @@
 
 // exo 6
 
-function somme_1_a_10() {
-    let somme = 0
+// function somme_1_a_10() {
+//     let somme = 0
+//     for (let i = 1; i <= 10; i++) {
+//         somme += i
+//         console.log(somme);
+//     }
+//     return somme
+// }
+// console.log(somme_1_a_10());
+
+
+
+// exo 7
+
+function factoriel_de_10() {
+    let result = 0
+    let calcul = ""
     for (let i = 1; i <= 10; i++) {
-        somme += i
-        console.log(somme);
+        calcul += i + "*"
     }
-    return somme
+    calcul = calcul.substring(0, calcul.length - 1)
+    return eval(calcul)
 }
-console.log(somme_1_a_10());
+console.log(factoriel_de_10());
+
