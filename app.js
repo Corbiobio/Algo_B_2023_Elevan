@@ -255,23 +255,41 @@
 
 // exo 17
 
-let string_test = "§!sg@sdvsvs,;,;;,;#$%*dsdsd(vds)_-v=+{}[vs]sdsd\|<>?/.,;"
+// let string_test = "§!sg@sdvsvs,;,;;,;#$%*dsdsd(vds)_-v=+{}[vs]sdsd\|<>?/.,;"
 
-function caractere_speciaux(string) {
-    let caractere = "§!@#$%*()_-=+{}[]\|<>?/.,;"
-    let compteur = 0
+// function caractere_speciaux(string) {
+//     let caractere = "§!@#$%*()_-=+{}[]\|<>?/.,;"
+//     let compteur = 0
 
-    for (let i = 0; i < string.length; i++) {
-        for (let j = 0; j < caractere.length; j++) {
-            if (string[i] === caractere[j]) {
-                compteur++
-            }
-        }
+//     for (let i = 0; i < string.length; i++) {
+//         for (let j = 0; j < caractere.length; j++) {
+//             if (string[i] === caractere[j]) {
+//                 compteur++
+//             }
+//         }
+//     }
+//     return compteur
+// }
+
+// console.log(caractere_speciaux(string_test));
+
+
+// exo 18
+
+let array_test = "5,9,7,4,5,63,4,8,89,5,9"
+function moyenne(arr) {
+    let arr_temp = array_test.split(",")
+    for (let i = 0; i < arr_temp.length; i++) {
+        arr_temp[i] = parseInt(arr_temp[i])
     }
-    return compteur
+
+    let total = 0
+    for (let i = 0; i < arr_temp.length; i++) {
+        total += arr_temp[i]
+        console.log(total);
+    }
+    console.log(arr_temp.length);
+    return total / arr_temp.length
 }
 
-console.log(caractere_speciaux(string_test));
-
-
-
+console.log(moyenne(array_test));
