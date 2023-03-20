@@ -188,23 +188,37 @@
 
 // exo 14
 
+// function fibonacci() {
+//     let num_temp = 1
+//     let num_temp2 = 0
+//     let final_num = 0
+//     for (let i = 0; i <= 10; i++) {
+//         final_num += num_temp2
 
 
-function fibonacci() {
-    let num_temp = 1
-    let num_temp2 = 0
-    let final_num = 0
-    for (let i = 0; i <= 10; i++) {
-        final_num += num_temp2
+//         num_temp2 = num_temp
+//         num_temp = final_num
+//         console.log(final_num);
+//     }
+//     return final_num
+// }
+// console.log(fibonacci());
 
 
-        num_temp2 = num_temp
-        num_temp = final_num
-        console.log(final_num);
+
+// exo 15
+
+let num = 1235496
+function somme_des_chiffres(num) {
+    let num_string = `${num}`
+    let total = 0
+    for (let i = 0; i < num_string.length; i++) {
+        total += parseInt(num_string[i])
     }
-    return final_num
+    return total
 }
-console.log(fibonacci());
+
+console.log(somme_des_chiffres(num));
 
 
 
