@@ -158,18 +158,35 @@
 // exo 12
 
 
-let arr_test = [-5, 5, -6, 89, 9, 8, -45, -555, 23]
-function num_positif(arr) {
-    let arr_temp = []
+// let arr_test = [-5, 5, -6, 89, 9, 8, -45, -555, 23]
+// function num_positif(arr) {
+//     let arr_temp = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] >= 0) {
+//             arr_temp.push(arr[i])
+//         }
+//     }
+//     return arr_temp
+// }
+
+// console.log(num_positif(arr_test));
+
+
+// exo 13 
+let arr_test = [12, 56, 45, 789, 56, 45, 23, 56, 564, 23, 46, 56, 613]
+function max(arr) {
+    let num_max = 0
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] >= 0) {
-            arr_temp.push(arr[i])
+        if (arr[i] > num_max) {
+            num_max = arr[i]
         }
     }
-    return arr_temp
+    return num_max
 }
 
-console.log(num_positif(arr_test));
+console.log(max(arr_test));
+
+
 
 
 
