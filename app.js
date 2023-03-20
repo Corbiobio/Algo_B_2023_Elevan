@@ -243,10 +243,11 @@
 // let arr_test = [1159, 159, 19, 1564569, 1569]
 
 // function inverse(arr) {
-//     let arr_temp = []
-//     for (let i = arr.length - 1; i >= 0; i--) {
-//         arr_temp.push(arr[i])
-//     }
+//     let arr_temp = arr
+//     let first = arr_temp.shift()
+//     let last = arr_temp.pop()
+//     arr_temp.push(first)
+//     arr_temp.unshift(last)
 //     return arr_temp
 // }
 
@@ -276,20 +277,20 @@
 
 // exo 18
 
-let array_test = "5,9,7,4,5,63,4,8,89,5,9"
-function moyenne(arr) {
-    let arr_temp = array_test.split(",")
-    for (let i = 0; i < arr_temp.length; i++) {
-        arr_temp[i] = parseInt(arr_temp[i])
-    }
+// let array_test = "5,9,7,4,5,63,4,8,89,5,9"
+// function moyenne(arr) {
+//     let arr_temp = array_test.split(",")
+//     for (let i = 0; i < arr_temp.length; i++) {
+//         arr_temp[i] = parseInt(arr_temp[i])
+//     }
 
-    let total = 0
-    for (let i = 0; i < arr_temp.length; i++) {
-        total += arr_temp[i]
-        console.log(total);
-    }
-    console.log(arr_temp.length);
-    return total / arr_temp.length
-}
+//     let total = 0
+//     for (let i = 0; i < arr_temp.length; i++) {
+//         total += arr_temp[i]
+//         console.log(total);
+//     }
+//     console.log(arr_temp.length);
+//     return total / arr_temp.length
+// }
 
-console.log(moyenne(array_test));
+// console.log(moyenne(array_test));
