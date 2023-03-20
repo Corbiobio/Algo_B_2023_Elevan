@@ -40,28 +40,41 @@
 
 //exo 4 
 
-function table_de_multiplication_de_7() {
-    let table_de_7 = ""
-    for (let i = 1; i <= 10; i++) {
-        table_de_7 += i * 7 + " "
-    }
-    console.log(table_de_7);
-    return "end of the function"
-}
-console.log(table_de_multiplication_de_7());
+// function table_de_multiplication_de_7() {
+//     let table_de_7 = ""
+//     for (let i = 1; i <= 10; i++) {
+//         table_de_7 += i * 7 + " "
+//     }
+//     console.log(table_de_7);
+//     return "end of the function"
+// }
+// console.log(table_de_multiplication_de_7());
 
 
 // exo 5
 
-function multiplication() {
-    for (let i = 1; i <= 10; i++) {
-        let table_1_a_10 = ""
-        for (let j = 1; j <= 10; j++) {
-            table_1_a_10 += i * j + " "
-        }
-        console.log(table_1_a_10);
-    }
-    return "end of the function"
-}
+// function multiplication() {
+//     for (let i = 1; i <= 10; i++) {
+//         let table_1_a_10 = ""
+//         for (let j = 1; j <= 10; j++) {
+//             table_1_a_10 += i * j + " "
+//         }
+//         console.log(table_1_a_10);
+//     }
+//     return "end of the function"
+// }
 
-console.log(multiplication());
+// console.log(multiplication());
+
+
+// exo 6
+
+function somme_1_a_10() {
+    let somme = 0
+    for (let i = 1; i <= 10; i++) {
+        somme += i
+        console.log(somme);
+    }
+    return somme
+}
+console.log(somme_1_a_10());
