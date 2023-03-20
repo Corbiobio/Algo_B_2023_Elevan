@@ -96,11 +96,24 @@
 
 
 // exo 7 correction
-function factoriel_de_10() {
-    let result = 1
-    for (let i = 1; i < 10; i++) {
-        result += result * i
+// function factoriel_de_10() {
+//     let result = 1
+//     for (let i = 1; i < 10; i++) {
+//         result += result * i
+//     }
+//     return result
+// }
+// console.log(factoriel_de_10());
+
+// exo 8 
+
+function paire_de_10_a_30() {
+    let result = 0
+    for (let i = 10; i <= 30; i += 2) {
+        result += i
     }
     return result
 }
-console.log(factoriel_de_10());
+
+console.log(paire_de_10_a_30());
+
