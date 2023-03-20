@@ -120,16 +120,26 @@
 
 
 // exo 10
-let arr_ex = [0, 1, 0, 1, 5, 0, 5, 445, 8]
-function somme_arr(arr) {
-    let somme = 0
-    for (let i = 0; i < arr.length; i++) {
-        somme += arr[i]
-    }
-    return somme
-}
+// let arr_ex = [0, 1, 0, 1, 5, 0, 5, 445, 8]
+// function somme_arr(arr) {
+//     let somme = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         somme += arr[i]
+//     }
+//     return somme
+// }
 
-console.log(somme_arr(arr_ex));
+// console.log(somme_arr(arr_ex));
+
+
+// exo 9 
+let temp_cesius = 154
+function temp_fahr(temp) {
+    let temp_final = 32 + (temp * 1.8)
+    return temp_final
+}
+console.log(temp_fahr(temp_cesius));
+
 
 
 
