@@ -208,17 +208,50 @@
 
 // exo 15
 
-let num = 1235496
-function somme_des_chiffres(num) {
-    let num_string = `${num}`
-    let total = 0
-    for (let i = 0; i < num_string.length; i++) {
-        total += parseInt(num_string[i])
+// let num = 1235496
+// function somme_des_chiffres(num) {
+//     let num_string = `${num}`
+//     let total = 0
+//     for (let i = 0; i < num_string.length; i++) {
+//         total += parseInt(num_string[i])
+//     }
+//     return total
+// }
+
+// console.log(somme_des_chiffres(num));
+
+
+// exo 16
+
+
+// premier test
+
+// let arr_test = [19, 19, 19, 1564569, 1569]
+// function inverse(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let first = Number(String(arr[i])[0])
+//         let last = Number(String(arr[i])[String(arr[i]).length - 1])
+//         console.log(first);
+//         console.log(last)
+//     }
+// }
+
+// console.log(inverse(arr_test));
+
+
+
+let arr_test = [1159, 159, 19, 1564569, 1569]
+
+function inverse(arr) {
+    let arr_temp = []
+    for (let i = arr.length - 1; i >= 0; i--) {
+        arr_temp.push(arr[i])
     }
-    return total
+    return arr_temp
 }
 
-console.log(somme_des_chiffres(num));
+console.log(inverse(arr_test));
+
 
 
 
