@@ -7,6 +7,7 @@
 //         num += i
 //         console.log(num);
 //     }
+//     return "end of the function"
 // }
 // console.log(UnaDix());
 
@@ -19,17 +20,48 @@
 //         num += i + " "
 //         console.log(num);
 //     }
+// return "end of the function"
 // }
 // console.log(UnaDix());
 
 
 // exo 3 
 
-function impaires() {
-    let num_impaires = ""
-    for (let i = 1; i < 100; i += 2) {
-        num_impaires += i + " "
-        console.log(num_impaires);
+// function impaires() {
+//     let num_impaires = ""
+//     for (let i = 1; i < 100; i += 2) {
+//         num_impaires += i + " "
+//         console.log(num_impaires);
+//     }
+// return "end of the function"
+// }
+// console.log(impaires());
+
+
+//exo 4 
+
+function table_de_multiplication_de_7() {
+    let table_de_7 = ""
+    for (let i = 1; i <= 10; i++) {
+        table_de_7 += i * 7 + " "
     }
+    console.log(table_de_7);
+    return "end of the function"
 }
-console.log(impaires());
+console.log(table_de_multiplication_de_7());
+
+
+// exo 5
+
+function multiplication() {
+    for (let i = 1; i <= 10; i++) {
+        let table_1_a_10 = ""
+        for (let j = 1; j <= 10; j++) {
+            table_1_a_10 += i * j + " "
+        }
+        console.log(table_1_a_10);
+    }
+    return "end of the function"
+}
+
+console.log(multiplication());
