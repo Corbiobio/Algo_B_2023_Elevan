@@ -133,12 +133,27 @@
 
 
 // exo 9 
-let temp_cesius = 154
-function temp_fahr(temp) {
-    let temp_final = 32 + (temp * 1.8)
-    return temp_final
+// let temp_cesius = 154
+// function temp_fahr(temp) {
+//     let temp_final = 32 + (temp * 1.8)
+//     return temp_final
+// }
+// console.log(temp_fahr(temp_cesius));
+
+
+
+// exo 11
+let array_test = [5, 9, 7, 4, 5, 63, 4, 8, 89, 5]
+function moyenne(arr) {
+    let total = 0
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i]
+    }
+    return total / arr.length
 }
-console.log(temp_fahr(temp_cesius));
+
+console.log(moyenne(array_test));
+
 
 
 
