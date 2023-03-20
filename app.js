@@ -240,18 +240,38 @@
 
 
 
-let arr_test = [1159, 159, 19, 1564569, 1569]
+// let arr_test = [1159, 159, 19, 1564569, 1569]
 
-function inverse(arr) {
-    let arr_temp = []
-    for (let i = arr.length - 1; i >= 0; i--) {
-        arr_temp.push(arr[i])
+// function inverse(arr) {
+//     let arr_temp = []
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         arr_temp.push(arr[i])
+//     }
+//     return arr_temp
+// }
+
+// console.log(inverse(arr_test));
+
+
+// exo 17
+
+let string_test = "§!sg@sdvsvs,;,;;,;#$%*dsdsd(vds)_-v=+{}[vs]sdsd\|<>?/.,;"
+
+function caractere_speciaux(string) {
+    let caractere = "§!@#$%*()_-=+{}[]\|<>?/.,;"
+    let compteur = 0
+
+    for (let i = 0; i < string.length; i++) {
+        for (let j = 0; j < caractere.length; j++) {
+            if (string[i] === caractere[j]) {
+                compteur++
+            }
+        }
     }
-    return arr_temp
+    return compteur
 }
 
-console.log(inverse(arr_test));
-
+console.log(caractere_speciaux(string_test));
 
 
 
